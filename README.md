@@ -1,4 +1,12 @@
-# One RGB camera → 3D, on a public dataset
+# Shape without scale
+
+![Estimated vs ground-truth trajectory](trajectory.png)
+
+**There are two trajectories in that plot.** One is motion capture. One is a single RGB
+camera. You cannot see the difference, because it is 8.2 mm over a 7.10 m path.
+
+You also cannot see the thing that makes it work — a scale factor of 0.566 that came from
+the ground truth, not from the images. This repo is about that second sentence.
 
 Reproduces the numbers: **622/622 frames registered, 8.2 mm from motion capture, 29.3 dB
 Gaussian splat** — from a single RGB stream with no depth, no IMU and no LiDAR.
