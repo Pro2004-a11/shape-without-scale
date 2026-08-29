@@ -3,6 +3,8 @@
 **One RGB camera. 622 frames of ordinary handheld video. 8.2 mm from motion capture — and no
 idea how big the room is.**
 
+By **Yosi Refaeli** — Senior Technical Artist & AI Systems
+
 Everything below runs on **TUM RGB-D `fr3/long_office_household`**, which is public and has
 motion-capture ground truth, so you can check the result instead of taking my word for it.
 That dataset ships a Kinect depth channel. It is **never used**. No depth, no IMU, no LiDAR.
@@ -146,6 +148,11 @@ python ate_scale.py --est $W/sparse/0 --gt path/to/groundtruth_model/0
 `ate_scale.py` needs only numpy and works on any COLMAP **text** model, so it is reusable on
 your own reconstructions. Pass it a binary model and it will tell you how to convert one.
 
+## Author
+
+**Yosi Refaeli** — Senior Technical Artist & AI Systems.
+3D reconstruction, Gaussian splatting, and generative pipelines for capture-to-BIM work.
+
 ## License
 
-MIT
+MIT © 2026 Yosi Refaeli
